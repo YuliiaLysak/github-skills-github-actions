@@ -9,13 +9,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-#    steps:
-#      - name: Upload artifacts
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: my-artifact
-#          path: my-artifact.txt
     steps:
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: my-artifact.txt
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Run Script
