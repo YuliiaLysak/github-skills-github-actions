@@ -1,6 +1,7 @@
 name: test uploading artifact
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - test
